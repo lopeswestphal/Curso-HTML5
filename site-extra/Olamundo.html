@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<link rel="stylesheet" href="prataCSS.css">
+	<meta charset="utf-8"/>
+ 	<title>Estudo</title> 
+ 	<style>/*Editar usando Css*/
+ 		body{
+ 			/*background-image: url(Bolinha.jpg);*/
+ 			background-color: #a1d3ef;
+ 			color: black;
+ 		}
+ 		h2{
+ 			text-shadow: 2px 2px 2px red;
+ 		}
+ 		h1{
+ 			font-family: Arial; /*tipo da fonte*/
+ 			font-size: 30pt; /*Tamanho da fonte*/
+ 			color: black; /*Cor da mensagem*/
+ 			text-shadow: 2px 2px 2px red; /*Botar sombreamento na mensagem*/
+ 		}
+ 	</style>
+ 	<script>
+ 		var quebrada = false;
+ 		function mudaLampada(tipo){ /*<- função em javaS*/
+ 			if (!quebrada) {
+ 				document.getElementById("luz").src = tipo + ".jpg";
+ 				if (tipo == "lampada-quebrada") {
+ 					quebrada = true;
+ 				}
+ 			}
+ 		} 
+ 	</script>
+</head>
+<body>
+<h1>Extras do curso:</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PjN5t2w3m0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>----------------------------------------------------------------------------------------------------------</h2>
+<h2>testando javaScript:</h2>
+<h3>acenda a lampada</h3>
+<img src="lampada-apagada.jpg" id="luz" 
+	onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')">	
+<br>
+	<script>
+		document.write("Ola, o dia e " + Date());
+	</script>
+<h2>----------------------------------------------------------------------------------------------------------</h2>
+<h2> Exemplos de <sup>formatação:</sup><sub>eeeeeee</sub></h2>
+<pre>
+<code>
+	#include &lt;iosstream&gt;
+	int main() {
+	cout << "Ola mundo!";
+	return 0;
+	}
+</code>
+</pre>	
+<h2>----------------------------------------------------------------------------------------------------------</h2>
+<h2>Simbolos epeciais:</h2>
+<p>
+	&lt; &gt; &le; &ge;
+	<br/> 
+    &pound; &yen; &euro; &copy;
+	<br/>
+	&reg; &trade; &permil; &sum; &times; &infin; &plusmn; &oplus; &radic; &ne;
+	<br/>
+	&delta; &lambda; &omega; &phi;
+	<br/>
+	&larr; &Rarr; &uarr; &darr; &harr; &spades; &hearts; &clubs; &diams;
+</p>
+<h2>----------------------------------------------------------------------------------------------------------</h2>
+<nav>
+	<h2>Listas:</h2>
+	<ol type="a" start="3"> 
+		<li>Home</li>
+		<li>Especificações</li>
+		<li>Fotos</li>
+		<li>Multimídia</li>
+		<li>Fale conosco</li>
+	</ol>	 
+</nav>
+<h2>----------------------------------------------------------------------------------------------------------</h2>
+<table>
+<caption>Tabela Técnica do Google Glass Mar/2013</caption>
+
+<tr><td>Tela</td> <td>Resolução equivalente a tela de 25"</td> </tr>
+<tr><td rowspan="2">Camera</td> <td>5MP para fotos</td> </tr>
+<tr><td>720p para vídeos</td></tr>
+<tr><td colspan="2">linha extra</td></tr>
+<tr><td rowspan="2">Conectividade</td> <td>Wi-Fi</td> </tr>
+<tr><td>Bluetooth</td></tr>
+<tr><td>Memória Interna</td> <td>12GB</td> </tr>
+</table>
+
+</body>
+</html>
